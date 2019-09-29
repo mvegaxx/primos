@@ -25,10 +25,14 @@ $coordenadas: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 8
 
 $lista: 2 3 5 7;
 
+
+/* estilos pase*/
 @mixin base-dot {
   background-color: #fff;
   font-size: 4px;
 }
+
+/*estilos para numeros en $coordenadas*/
 
 @each $dot in $coordenadas {
   .cell:nth-child(#{$dot}) {
@@ -36,12 +40,17 @@ $lista: 2 3 5 7;
   }
 }
 
+/* estilo para los numeros en $lista */
 @each $dots in $lista {
   .cell:nth-child(#{$dots}n) {
     background-color: rgba(185, 185, 185, 0.76);
   }
 }
 
+/*estilos para numeros en particula
+numero solo aplica estilo a un numero particular
+numero + n aplica estilos a sus multiplos
+*/
 .cell:nth-child(671) {
   background-color: rgba(173, 0, 0, 0.76);
 }
@@ -116,13 +125,3 @@ $lista: 2 3 5 7;
 .cell:nth-child(97n) {
   background-color: rgba(185, 185, 185, 0.76);
 }*/
-
-@keyframes north-america {
-  0% {
-    background-color: #fff;
-  }
-
-  100% {
-    background-color: #b2b2b230;
-  }
-}
