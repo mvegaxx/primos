@@ -4,6 +4,8 @@
 //var factores = 17; // modificar aqui si quieres numeros mas grandes
 var factor = 36; // modificar aqui si quieres numeros mas grandes
 //var primoBase = 15024166879; // el numero primo base para comenzar la busqueda
+
+/// numero maximo alcanzado en js
 var primoBase = 9007199254740997; // el numero primo base para comenzar la busqueda
 var iteraciones = 20; // encuentra cadenas de numeros primos con mas iteraciones
 
